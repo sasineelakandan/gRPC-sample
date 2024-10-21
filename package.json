@@ -9,7 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@grpc/grpc-js": "^1.10.7",
+    "@grpc/grpc-js": "^1.12.2",
     "@grpc/proto-loader": "^0.7.13"
   }
 }
