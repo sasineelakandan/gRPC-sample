@@ -24,7 +24,7 @@ const todo = [];
 
 function createTodo(call, callback) {
   const item = {
-    id: todo.length + 1,
+    id: todo.length +1,
     text: call.request.text,
   };
 

@@ -9,7 +9,7 @@ const client = new todoPackage.Todo(
   grpc.credentials.createInsecure()
 );
 
-const text = process.argv[2];
+const text = 'ddddd';
 
 client.createTodo({ id: 1, text }, (err, response) => {
   if (err) {
