@@ -5,11 +5,11 @@ const grpcObject = grpc.loadPackageDefinition(packageDef);
 const todoPackage = grpcObject.todoPackage;
 
 const client = new todoPackage.Todo(
-  "localhost:3000",
+  "localhost:4001",
   grpc.credentials.createInsecure()
 );
 
-const text = 'ddddd';
+const text = process.argv[2]
 
 client.createTodo({ id: 1, text }, (err, response) => {
   if (err) {

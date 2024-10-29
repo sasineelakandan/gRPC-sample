@@ -13,7 +13,7 @@ server.addService(todoPackage.Todo.service, {
 });
 
 server.bindAsync(
-  "0.0.0.0:3000",
+  "0.0.0.0:4000",
   grpc.ServerCredentials.createInsecure(),
   (err, port) => {
     console.log("server started in " + port);

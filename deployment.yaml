@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-todo-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grpc-todo-server
+  template:
+    metadata:
+      labels:
+        app: grpc-todo-server
+    spec:
+      containers:
+      - name: grpc-todo-server
+        image: sasideva/app
+        ports:
+        - containerPort: 4000
